@@ -487,6 +487,9 @@ html, body{
 }
 
 /* MAIN - PRICE END */
+
+
+/* MAIN - MASTER START */
 .Block-masters{
     display: flex;
     flex-direction: column;
@@ -587,10 +590,6 @@ html, body{
     text-transform: uppercase;
     color: #333333;
 }
-
-
-
-/* MAIN - MASTER START */
 
 /* MAIN - MASTER END */
 
