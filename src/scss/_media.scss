@@ -1,0 +1,30 @@
+
+
+/* ------------------------- Adapriv --------------------------------- */
+/* Large Devices, Wide Screens */ 
+@media only screen and (max-width: 1280px) { 
+} 
+/* Medium Devices, Desktops */ 
+@media only screen and (max-width: 992px) { 
+    .circle, .girl{
+        opacity: 0.5;
+    }
+}
+/* Small Devices, Tablets */ 
+@media only screen and (max-width: 768px) { 
+    .header-top{
+        flex-direction: column;
+    }
+    .circle, .girl{
+        display: none;
+    }
+    
+     
+    
+} 
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width: 480px) { 
+} 
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width: 320px) { 
+}
