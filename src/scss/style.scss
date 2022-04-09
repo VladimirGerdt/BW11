@@ -26,7 +26,7 @@
 
 /* ---- --- HEADER START --- ---- */
 .header {
-  background: #f8f6f7 url(./image/header.jpg);
+  background: #f8f6f7 url(../images/header.jpg);
   width: 100%;
   position: relative;
   min-height: 591px;
@@ -68,8 +68,9 @@
 }
 
 .navigation a {
-  font-size: 18px;
   font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
   color: #333;
   transition: 0.15s color;
 }
@@ -102,8 +103,9 @@
 }
 
 .hero h1 {
+  font-weight: 600;
   font-size: 48px;
-  font-weight: 500;
+  line-height: 59px;
   margin-bottom: 17px;
 }
 .hero p {
@@ -132,7 +134,7 @@
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-25%);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -148,7 +150,7 @@
 .circle {
   position: absolute;
   top: 166px;
-  right: 85px;
+  right: 80px;
 }
 
 .block-1 {
@@ -179,7 +181,7 @@
 }
 
 .descriptionBW {
-  max-width: 570px;
+  max-width: 540px;
   height: 100%;
 }
 
@@ -191,15 +193,17 @@
 }
 
 .p1 {
+  font-weight: 400;
   font-size: 20px;
-  color: #333;
   line-height: 32px;
+  color: #333;
 }
 
 .p2 {
+  font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
   color: #333;
-  line-height: 32px;
 }
 .dpl {
   font-size: 14px;
@@ -221,6 +225,7 @@
   right: 0;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 
 .video-block:before {
@@ -233,7 +238,7 @@
   left: 50%;
   transform: translateX(-50%);
   transition: 0.3s;
-  background: url(./ico/iconPlay\ 1.svg) no-repeat center;
+  background: url(../images/ico/iconPlay1.svg) no-repeat center;
 }
 
 .video-block:after {
@@ -256,6 +261,7 @@
 
 .video-img {
   object-fit: cover;
+  width: 100%;
   opacity: 0.8;
 }
 
@@ -346,6 +352,16 @@
 
 .card {
   max-width: 320px;
+}
+
+.card__img {
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+  max-height: 180px;
+  height: 100%;
+}
+.card__marginbotom {
   margin-bottom: 48px;
 }
 .card6 {
@@ -359,6 +375,7 @@
   font-size: 48px;
   line-height: 59px;
   color: #333333;
+  margin-top: 100px;
 }
 
 .price__type {
@@ -383,6 +400,7 @@
 .price__list {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 
 .price__list__group {
@@ -392,6 +410,15 @@
   height: 51px;
   justify-content: space-between;
   margin-bottom: 32px;
+  overflow: hidden;
+}
+.price__list__group__title{
+  max-width: 300px;
+  overflow: hidden;
+}
+.price__list__group__title h4{
+  overflow: hidden;
+  max-height: 20px;
 }
 .left {
   margin-right: 125px;
@@ -428,6 +455,7 @@
   line-height: 59px;
   color: #333333;
   margin-bottom: 32px;
+  margin-top: 80px;
 }
 
 .Block-masters__descriptions {
@@ -441,6 +469,7 @@
 .masters {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 80px;
 }
 
 .masters__item_block {
@@ -449,12 +478,16 @@
   max-height: 300px;
   border-radius: 8px;
   position: relative;
+  max-width: 255px;
+  width: 100%;
+
+
 }
 
 .masters__item_img {
   object-fit: cover;
-  width: 255px;
-  max-height: 300px;
+  width: 100%;
+  max-width: 255px;
   position: relative;
   height: 100%;
   z-index: 1;
@@ -475,20 +508,20 @@
   visibility: hidden;
 }
 
-.masters__item_block:hover:before {
+.masters__item:hover .masters__item_block:before {
   visibility: visible;
 }
 
-.masters__item_img:hover {
+.masters__item:hover .masters__item_img {
   opacity: 0.5;
 }
 
-.masters__item__name {
+.masters__name {
   margin-bottom: 0px;
   margin-top: 20px;
 }
 
-.masters__item__prof {
+.masters__prof {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -497,7 +530,7 @@
   margin-bottom: 20px;
 }
 
-.masters__item__exp {
+.masters__exp {
   font-weight: 300;
   font-size: 12px;
   line-height: 15px;
@@ -507,6 +540,239 @@
 
 /* MAIN - MASTER END */
 
+/* MAIN PORTFOLIO START */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 115px;
+  .portfolio__head {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+
+    .portfolio__text {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 59px;
+      color: #333333;
+    }
+    .portfolio__vectors {
+      .transform {
+        transform: rotate(180deg);
+      }
+      .vector {
+        border-radius: 20px;
+        transition: 0.2s;
+      }
+      .vector:hover {
+        background-color: #c5b6bd;
+        cursor: pointer;
+      }
+    }
+  }
+  .portfolio__list {
+    display: flex;
+    justify-content: space-between;
+
+    .portfolio__fotoblocks{
+      position: relative;
+      max-width: 338px;
+      max-height: 338px;
+      height: 100%;
+      position: relative;
+      background-color: #000;
+      overflow: hidden;
+      border-radius: 10px;
+
+        .portfolio__foto {
+          max-width: 338px;
+          max-height: 338px;
+          height: 100%;
+      
+          .portfolio__foto::before {
+            content: "";
+            z-index: 3;
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            top: 149px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: 0.3s;
+            background: url(../images/portfolio/loupe.png) no-repeat center;
+            // visibility: hidden;
+          }
+          .portfolio__foto::after {
+            content: "Увеличить";
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 600;
+            color: #fff;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            z-index: 3;
+            top: 205px;
+            left: 0;
+            // visibility: hidden;
+          }
+          
+          .portfolio__img:hover{
+            opacity: 0.5;
+            transform: scale(1.1);
+            
+          }
+    
+    
+          .portfolio__img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
+    
+    }
+  }
+}
+/* MAIN PORTFOLIO END */
+
+// BRENDS START //
+.brends {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  .brend__text {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .brend__icons {
+    display: flex;
+    opacity: 0.7;
+    justify-content: center;
+    margin-bottom: 100px;
+    align-items: center;
+
+    .icons {
+      max-width: 160px;
+      width: 100%;
+    }
+  }
+}
+// BRENDS END //
+
+// CONTACTS START //
+.block-contacts{
+  display: flex;
+  justify-content: space-between;
+  .contacts{
+    max-width: 362px;
+    width: 100%;
+    .cont-text{
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 59px;
+      color: #333333;
+      margin-bottom: 32px;
+      margin-top: 78px;
+    }
+    .address{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #333333;
+    }
+    .email{
+      color: #278aff;
+      font-size: 14px;
+      transition: 0.15s color;
+      text-decoration: underline;
+      
+    }
+    .social-text{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #333333;
+      margin-top: 32px;
+    }
+    .social-bottom a{
+      margin-right: 20px;
+    }
+    .social-bottom img:hover {
+      opacity: 0.5;
+    }
+  }
+  .quiq-recording{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 445px;
+    max-height: 406px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+
+      .record-text{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 14px;
+        color: #333333;
+        margin-bottom: 15px;
+        margin-top: 0px;
+      }
+
+      .record-discription{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #333333;
+        margin-top: 0px;
+        margin-bottom: 35px;
+        text-align:justify;
+        
+      }
+      .block-record{
+        display: flex;
+        flex-direction: column;
+          .edit{
+            margin-bottom: 20px;
+            height: 44px;
+            flex: none;
+          }
+          .btn-record{
+            // max-width: 203px;
+            height: 48px;
+            // width: 100%;
+              
+            border-radius: 24px;
+            background-color: #fb9475;
+            font-size: 14px;
+            font-weight: 600;
+            color: #ffff;
+            border: none;
+            transition: 0.2s;
+          }
+          .btn-record:hover {
+            background-color: #f06b42;
+            cursor: pointer;
+          }
+      }
+      
+  }
+}
+
+
+// CONTACTS START //
+
+
+
 /* ---- --- MAIN END --- ---- */
 
 /* ---- --- FOOTER START --- ---- */
@@ -514,7 +780,7 @@
 .footer {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   max-width: 1100px;
   margin: 0 auto;
   height: 80px;
